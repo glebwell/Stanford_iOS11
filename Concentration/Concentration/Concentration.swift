@@ -10,21 +10,32 @@ import Foundation
 
 class Concentration {
 
-    var indexOfOneAndOnlyFaceUpCard: Int?
+    private var indexOfOneAndOnlyFaceUpCard: Int?
+    private var cards = [Card]()
+    private(set) var flipCount = 0
+    private(set) var score = 0
 
     init(numberOfPairsOfCards: Int) {
         for _ in 0..<numberOfPairsOfCards {
             let card = Card()
             cards += [card, card]
         }
-        // TODO: Shuffle the cards
+        cards.shuffle()
     }
-    
-    var cards = [Card]()
+
+    func startNewGame() {
+        flipCount = 0
+        score = 0
+        for i in cards.indices {
+            cards[i].isFaceUp = false
+            cards[i].isMatched = false
+        }
+        cards.shuffle()
+    }
 
     func chooseCard(at index: Int) {
+        flipCount += 1
         if !cards[index].isMatched {
-            //cards[index].isFaceUp = !cards[index].isFaceUp
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if cards match
                 if cards[matchIndex].identifier == cards[index].identifier {
@@ -42,6 +53,5 @@ class Concentration {
                 indexOfOneAndOnlyFaceUpCard = index
             }
         }
-
     }
 }

@@ -12,28 +12,42 @@ class ViewController: UIViewController {
 
     @IBOutlet var cardButtons: [UIButton]!
     @IBOutlet weak var flipCountLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var themeNameLabel: UILabel!
 
     @IBAction func touchCard(_ sender: UIButton) {
-        flipCount += 1
         if let cardNumber = cardButtons.index(of: sender) {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
         }
     }
 
+    @IBAction func startNewGame(_ sender: UIButton) {
+        theme = themeFactory.getRandomTheme()
+        emoji.removeAll()
+        game.startNewGame()
+        updateViewFromModel()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        theme = themeFactory.getRandomTheme()
+    }
+
     lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
 
-    var flipCount = 0 {
+    private let themeFactory = ThemeFactory()
+    private var theme: Theme? {
         didSet {
-            flipCountLabel.text = "Flips: \(flipCount)"
+            themeNameLabel.text = theme?.name ?? "Not Set"
         }
     }
 
-    var emojiChoises = ["👻", "🌞", "👿", "👹", "👺", "💩", "☠️", "🤖", "👾"]
-
-    var emoji = [Int: String]()
+    private var emoji = [Int: String]()
 
     func updateViewFromModel() {
+        flipCountLabel.text = "Flips: \(game.flipCount)"
+        scoreLabel.text = "Score: \(game.score)"
         for index in cardButtons.indices {
             let button = cardButtons[index]
             let card = game.cards[index]
@@ -48,9 +62,9 @@ class ViewController: UIViewController {
     }
 
     func emoji(for card: Card) -> String {
-        if emoji[card.identifier] == nil, !emojiChoises.isEmpty {
-            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoises.count)))
-            emoji[card.identifier] = emojiChoises.remove(at: randomIndex)
+        if emoji[card.identifier] == nil, theme != nil, !theme!.emojiChoises.isEmpty {
+            let randomIndex = Int(arc4random_uniform(UInt32(theme!.emojiChoises.count)))
+            emoji[card.identifier] = theme!.emojiChoises.remove(at: randomIndex)
         }
         return emoji[card.identifier] ?? "?"
     }

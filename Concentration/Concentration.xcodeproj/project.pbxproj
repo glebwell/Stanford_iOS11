@@ -14,6 +14,8 @@
 		849499431FE926C300AC05D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849499411FE926C300AC05D7 /* LaunchScreen.storyboard */; };
 		8494994D1FEA2AD500AC05D7 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494994C1FEA2AD500AC05D7 /* Concentration.swift */; };
 		8494994F1FEA2B9E00AC05D7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494994E1FEA2B9E00AC05D7 /* Card.swift */; };
+		F70ED4B11FEFB68D00ACEFBA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70ED4B01FEFB68D00ACEFBA /* Theme.swift */; };
+		F729D06F1FEEEAC00059B650 /* Array+shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729D06E1FEEEAC00059B650 /* Array+shuffle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		849499441FE926C300AC05D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8494994C1FEA2AD500AC05D7 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		8494994E1FEA2B9E00AC05D7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F70ED4B01FEFB68D00ACEFBA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F729D06E1FEEEAC00059B650 /* Array+shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+shuffle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				849499441FE926C300AC05D7 /* Info.plist */,
 				8494994C1FEA2AD500AC05D7 /* Concentration.swift */,
 				8494994E1FEA2B9E00AC05D7 /* Card.swift */,
+				F729D06E1FEEEAC00059B650 /* Array+shuffle.swift */,
+				F70ED4B01FEFB68D00ACEFBA /* Theme.swift */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -153,7 +159,9 @@
 				8494993B1FE926C300AC05D7 /* ViewController.swift in Sources */,
 				849499391FE926C300AC05D7 /* AppDelegate.swift in Sources */,
 				8494994D1FEA2AD500AC05D7 /* Concentration.swift in Sources */,
+				F70ED4B11FEFB68D00ACEFBA /* Theme.swift in Sources */,
 				8494994F1FEA2B9E00AC05D7 /* Card.swift in Sources */,
+				F729D06F1FEEEAC00059B650 /* Array+shuffle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
