@@ -11,7 +11,7 @@ import Foundation
 class Concentration {
 
     private var indexOfOneAndOnlyFaceUpCard: Int?
-    private var cards = [Card]()
+    private(set) var cards = [Card]()
     private(set) var flipCount = 0
     private(set) var score = 0
 
@@ -29,18 +29,29 @@ class Concentration {
         for i in cards.indices {
             cards[i].isFaceUp = false
             cards[i].isMatched = false
+            cards[i].isOnceOpened = false
         }
         cards.shuffle()
     }
 
     func chooseCard(at index: Int) {
-        flipCount += 1
         if !cards[index].isMatched {
+            flipCount += 1
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if cards match
                 if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
+                    score += 2
+                } else {
+                    if cards[index].isOnceOpened {
+                        score -= 1
+                    } else {
+                        cards[index].isOnceOpened = true
+                    }
+                    if cards[matchIndex].isOnceOpened {
+                        score -= 1
+                    }
                 }
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = nil
@@ -53,5 +64,6 @@ class Concentration {
                 indexOfOneAndOnlyFaceUpCard = index
             }
         }
+
     }
 }
