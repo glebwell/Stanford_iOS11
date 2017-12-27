@@ -45,7 +45,7 @@ class ViewController: UIViewController {
 
     private var emoji = [Int: String]()
 
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         flipCountLabel.text = "Flips: \(game.flipCount)"
         scoreLabel.text = "Score: \(game.score)"
         for index in cardButtons.indices {
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         }
     }
 
-    func emoji(for card: Card) -> String {
+    private func emoji(for card: Card) -> String {
         if emoji[card.identifier] == nil, theme != nil, !theme!.emojiChoises.isEmpty {
             let randomIndex = Int(arc4random_uniform(UInt32(theme!.emojiChoises.count)))
             emoji[card.identifier] = theme!.emojiChoises.remove(at: randomIndex)
