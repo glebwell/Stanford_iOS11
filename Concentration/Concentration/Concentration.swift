@@ -14,6 +14,21 @@ class Concentration {
     private(set) var cards = [Card]()
     private(set) var flipCount = 0
     private(set) var score = 0
+    private var lastPickCardTime: Date?
+
+    private struct Points {
+        static let matchBonus = 20
+        static let missmatchPenalty = 10
+        static let maxTimePenalty = 10
+    }
+
+    private var timePenalty: Int {
+        if lastPickCardTime != nil {
+            return min(-Int(lastPickCardTime!.timeIntervalSinceNow), Points.maxTimePenalty)
+        } else {
+            return 0
+        }
+    }
 
     init(numberOfPairsOfCards: Int) {
         for _ in 0..<numberOfPairsOfCards {
@@ -44,15 +59,15 @@ class Concentration {
                 if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
-                    score += 2
+                    score += Points.matchBonus
                 } else {
                     if cards[index].isOnceOpened {
-                        score -= 1
+                        score -= Points.missmatchPenalty
                     } else {
                         cards[index].isOnceOpened = true
                     }
                     if cards[matchIndex].isOnceOpened {
-                        score -= 1
+                        score -= Points.missmatchPenalty
                     }
                 }
                 cards[index].isFaceUp = true
@@ -65,6 +80,9 @@ class Concentration {
                 cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = index
             }
+
+            score -= timePenalty
+            lastPickCardTime = Date()
         }
 
     }
