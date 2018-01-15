@@ -59,6 +59,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fqi-FX-3LV"/>
                                                 </connections>
@@ -67,6 +70,9 @@
                                                 <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrP-vK-4ac"/>
                                                 </connections>
@@ -75,6 +81,9 @@
                                                 <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJi-aw-Jv7"/>
                                                 </connections>
@@ -83,6 +92,9 @@
                                                 <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79c-cJ-9eB"/>
                                                 </connections>
@@ -96,6 +108,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNf-uF-hsP"/>
                                                 </connections>
@@ -104,6 +119,9 @@
                                                 <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kR3-Qc-7xg"/>
                                                 </connections>
@@ -112,6 +130,9 @@
                                                 <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htu-5U-qXl"/>
                                                 </connections>
@@ -120,6 +141,9 @@
                                                 <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KcG-kF-Tjx"/>
                                                 </connections>
@@ -133,6 +157,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUn-wu-R36"/>
                                                 </connections>
@@ -141,6 +168,9 @@
                                                 <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCB-Yz-Q7L"/>
                                                 </connections>
@@ -149,6 +179,9 @@
                                                 <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiW-wF-8xL"/>
                                                 </connections>
@@ -157,6 +190,9 @@
                                                 <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dg9-dQ-MMr"/>
                                                 </connections>
@@ -170,6 +206,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w7h-S5-paD"/>
                                                 </connections>
@@ -178,6 +217,9 @@
                                                 <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCC-S7-OeR"/>
                                                 </connections>
@@ -186,6 +228,9 @@
                                                 <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1P-dr-PUf"/>
                                                 </connections>
@@ -194,6 +239,9 @@
                                                 <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="118.33333333333333"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajx-k4-MA1"/>
                                                 </connections>
@@ -207,6 +255,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLw-4q-uoF"/>
                                                 </connections>
@@ -215,6 +266,9 @@
                                                 <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVN-D7-G3d"/>
                                                 </connections>
@@ -223,6 +277,9 @@
                                                 <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z48-dW-vn7"/>
                                                 </connections>
@@ -231,6 +288,9 @@
                                                 <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="118"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhc-BP-plR"/>
                                                 </connections>
