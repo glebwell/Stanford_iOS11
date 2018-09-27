@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var flipCountLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var themeNameLabel: UILabel!
-
+    @IBOutlet weak var newGameButton: UIButton!
+    
     @IBAction func touchCard(_ sender: UIButton) {
         if let cardNumber = cardButtons.index(of: sender) {
             game.chooseCard(at: cardNumber)
@@ -26,12 +27,32 @@ class ViewController: UIViewController {
         theme = themeFactory.getRandomTheme()
         emoji.removeAll()
         game.startNewGame()
+        setColors()
         updateViewFromModel()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         theme = themeFactory.getRandomTheme()
+
+        setColors()
+
+        for button in cardButtons {
+            button.titleLabel?.minimumScaleFactor = 0.5
+            button.titleLabel?.sizeToFit()
+        }
+    }
+
+    private func setColors() {
+        flipCountLabel.textColor = theme?.backOfCardColor
+        scoreLabel.textColor = theme?.backOfCardColor
+        themeNameLabel.textColor = theme?.backOfCardColor
+        newGameButton.tintColor = theme?.backOfCardColor
+
+        view.backgroundColor = theme?.viewBackgroundColor
+        for button in cardButtons {
+            button.backgroundColor = theme?.backOfCardColor
+        }
     }
 
     lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
@@ -45,7 +66,7 @@ class ViewController: UIViewController {
 
     private var emoji = [Int: String]()
 
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         flipCountLabel.text = "Flips: \(game.flipCount)"
         scoreLabel.text = "Score: \(game.score)"
         for index in cardButtons.indices {
@@ -56,12 +77,12 @@ class ViewController: UIViewController {
                 button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
             } else {
                 button.setTitle("", for: .normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : theme?.backOfCardColor
             }
         }
     }
 
-    func emoji(for card: Card) -> String {
+    private func emoji(for card: Card) -> String {
         if emoji[card.identifier] == nil, theme != nil, !theme!.emojiChoises.isEmpty {
             let randomIndex = Int(arc4random_uniform(UInt32(theme!.emojiChoises.count)))
             emoji[card.identifier] = theme!.emojiChoises.remove(at: randomIndex)
