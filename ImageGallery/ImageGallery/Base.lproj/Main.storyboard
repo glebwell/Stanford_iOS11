@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mef-tO-rkd">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Gallery Collection View Controller-->
+        <scene sceneID="syv-o2-xGy">
+            <objects>
+                <collectionViewController id="Mef-tO-rkd" customClass="ImageGalleryCollectionViewController" customModule="ImageGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="uyq-di-JSe">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aiB-SD-c8l">
+                            <size key="itemSize" width="300" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Image Cell" id="n3h-V5-GIV" customClass="ImageCollectionViewCell" customModule="ImageGallery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-BC-PEF">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        </imageView>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8cN-Q0-1jA">
+                                            <rect key="frame" x="131.5" y="131.5" width="37" height="37"/>
+                                            <color key="color" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="hL4-BC-PEF" firstAttribute="leading" secondItem="n3h-V5-GIV" secondAttribute="leading" id="4ou-PY-JeM"/>
+                                    <constraint firstAttribute="bottom" secondItem="hL4-BC-PEF" secondAttribute="bottom" id="AtR-Np-lPW"/>
+                                    <constraint firstItem="8cN-Q0-1jA" firstAttribute="centerX" secondItem="n3h-V5-GIV" secondAttribute="centerX" id="CFd-sU-755"/>
+                                    <constraint firstItem="8cN-Q0-1jA" firstAttribute="centerY" secondItem="n3h-V5-GIV" secondAttribute="centerY" id="QXb-4J-6Xs"/>
+                                    <constraint firstAttribute="trailing" secondItem="hL4-BC-PEF" secondAttribute="trailing" id="Uv8-nT-5FY"/>
+                                    <constraint firstItem="hL4-BC-PEF" firstAttribute="top" secondItem="n3h-V5-GIV" secondAttribute="top" id="lIB-a7-XBE"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageGallery" destination="hL4-BC-PEF" id="530-sh-xZ7"/>
+                                    <outlet property="spinner" destination="8cN-Q0-1jA" id="fEZ-Xe-rV9"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Mef-tO-rkd" id="eXZ-Ca-Qea"/>
+                            <outlet property="delegate" destination="Mef-tO-rkd" id="nBC-7D-pId"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HlL-SG-9i1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-308" y="106"/>
+        </scene>
+    </scenes>
+</document>
