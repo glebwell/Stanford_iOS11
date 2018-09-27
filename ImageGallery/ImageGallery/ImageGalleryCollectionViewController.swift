@@ -10,23 +10,42 @@ import UIKit
 
 class ImageGalleryCollectionViewController: UICollectionViewController {
 
+  // MARK: - Public API, Model
+  var imageCollection = [ImageModel]()
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    imageCollection = [
+      ImageModel(url: URL(string: "http://www.planetware.com/photos-large/F/france-paris-eiffel-tower.jpg")!,
+                 aspectRatio: 0.67
+      ),
+      ImageModel(url: URL(string: "http://adriatic-lines.com/wp-content/uploads/2015/04/canal-of-Venice.jpg")!,
+                 aspectRatio: 1.4
+      ),
+      ImageModel(url: URL(string: "http://www.picture-newsletter.com/arctic/arctic-12.jpg")!,
+                 aspectRatio: 0.75
+      )
+    ]
+  }
+
   // MARK: UICollectionViewDataSource
 
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
-    return 0
+    return 1
   }
 
 
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    // #warning Incomplete implementation, return the number of items
-    return 0
+    return imageCollection.count
   }
 
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Image Cell", for: indexPath)
     
-    // Configure the cell
+    if let imageCell = cell as? ImageCollectionViewCell {
+      imageCell.imageURL = imageCollection[indexPath.item].url
+    }
     
     return cell
   }

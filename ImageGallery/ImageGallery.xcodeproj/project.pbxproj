@@ -13,6 +13,7 @@
 		8417ABE4215D06EA00A65540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417ABE2215D06EA00A65540 /* LaunchScreen.storyboard */; };
 		8417ABED215D091300A65540 /* ImageGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417ABEC215D091300A65540 /* ImageGalleryCollectionViewController.swift */; };
 		8417ABEF215D0D1900A65540 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417ABEE215D0D1900A65540 /* ImageCollectionViewCell.swift */; };
+		F7429D11215D4113008B5096 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7429D10215D4113008B5096 /* ImageGallery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8417ABE5215D06EA00A65540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8417ABEC215D091300A65540 /* ImageGalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		8417ABEE215D0D1900A65540 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7429D10215D4113008B5096 /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				8417ABEE215D0D1900A65540 /* ImageCollectionViewCell.swift */,
 				8417ABE5215D06EA00A65540 /* Info.plist */,
 				8417ABEB215D081C00A65540 /* Supporting Files */,
+				F7429D10215D4113008B5096 /* ImageGallery.swift */,
 			);
 			path = ImageGallery;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7429D11215D4113008B5096 /* ImageGallery.swift in Sources */,
 				8417ABEF215D0D1900A65540 /* ImageCollectionViewCell.swift in Sources */,
 				8417ABDA215D06E900A65540 /* AppDelegate.swift in Sources */,
 				8417ABED215D091300A65540 /* ImageGalleryCollectionViewController.swift in Sources */,
